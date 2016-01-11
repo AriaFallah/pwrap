@@ -1,6 +1,6 @@
 {
   "name": "pwrap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Give any function promise capability.",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,7 @@
   "devDependencies": {
     "chai": "^3.4.1",
     "chai-as-promised": "^5.2.0",
+    "eslint": "^1.10.3",
     "mocha": "^2.3.4"
   },
   "dependencies": {

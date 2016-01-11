@@ -1,5 +1,8 @@
 # pwrap
 
+[![NPM version][npm-image]][npm-url]
+[![Build status][travis-image]][travis-url]
+
 Add promise capability to any asynchronous function.
 
 ## Installation
@@ -33,3 +36,8 @@ It's a nice way to wrap a function in a promise in a less verbose way, and also 
 
 ## License
 MIT
+
+[npm-image]: https://img.shields.io/npm/v/pwrap.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/pwrap
+[travis-image]: https://img.shields.io/travis/tj/pwrap.svg?style=flat-square
+[travis-url]: https://travis-ci.org/AriaFallah/pwrap
