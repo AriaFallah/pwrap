@@ -1,0 +1,27 @@
+{
+  "name": "promise-wrap",
+  "version": "1.0.0",
+  "description": "Give any function promise capability.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AriaFallah/promise-wrap.git"
+  },
+  "author": "Aria Fallah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AriaFallah/promise-wrap/issues"
+  },
+  "homepage": "https://github.com/AriaFallah/promise-wrap#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-as-promised": "^5.2.0",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "bluebird": "^3.1.1"
+  }
+}
