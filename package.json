@@ -1,10 +1,18 @@
 {
   "name": "pwrap",
-  "version": "1.0.1",
-  "description": "Give any function promise capability.",
+  "version": "1.0.2",
+  "description": "Give any function promise capability",
+  "keywords": [
+    "promise",
+    "wrap",
+    "pwrap",
+    "async"
+  ],
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint index.js test",
+    "test:cover": "istanbul cover _mocha --report lcovonly"
   },
   "repository": {
     "type": "git",
@@ -20,6 +28,7 @@
     "chai": "^3.4.1",
     "chai-as-promised": "^5.2.0",
     "eslint": "^1.10.3",
+    "istanbul": "^0.4.1",
     "mocha": "^2.3.4"
   },
   "dependencies": {

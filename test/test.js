@@ -16,13 +16,12 @@ describe('promise wrap', function() {
   });
 
   it('actually works', function() {
-    var timeout = pwrap(
-      function(str, ms, resolve) {
+    var timeout =
+      pwrap(function(str, ms, resolve) {
         setTimeout(function() {
           resolve(str);
         }, ms);
-      }
-    );
+      });
     return expect(timeout('pls work', 100)).to.eventually.equal('pls work');
   });
 });
