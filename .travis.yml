@@ -2,4 +2,4 @@ language: node_js
 node_js:
   - "4.0"
   - "0.12"
-script: "npm run test:cover"
+script: "npm run test:cover-travis"
