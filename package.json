@@ -1,7 +1,7 @@
 {
   "name": "pwrap",
   "version": "1.0.2",
-  "description": "Give any function promise capability",
+  "description": "Add promise capability to any function",
   "keywords": [
     "promise",
     "wrap",

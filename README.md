@@ -6,7 +6,7 @@
 [![bitHound Overall Score][bitHound-image]][bitHound-url]
 ![Dependency status][david-image]
 
-Add promise capability to any asynchronous function.
+Add promise capability to any function.
 
 ## Installation
 ```bash
