@@ -2,6 +2,8 @@
 
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
+[![Coverage][coveralls-image]][coveralls-url]
+[![bitHound Overall Score][bitHound-image]][bitHound-url]
 ![Dependency status][david-image]
 
 Add promise capability to any asynchronous function.
@@ -42,4 +44,9 @@ MIT
 [npm-url]: https://www.npmjs.com/package/pwrap
 [travis-image]: https://img.shields.io/travis/AriaFallah/pwrap.svg?style=flat-square
 [travis-url]: https://travis-ci.org/AriaFallah/pwrap
+[coveralls-image]: https://img.shields.io/coveralls/AriaFallah/pwrap.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/github/AriaFallah/pwrap
+[bitHound-image]: https://www.bithound.io/github/AriaFallah/pwrap/badges/score.svg
+[bitHound-url]: https://www.bithound.io/github/AriaFallah/pwrap
+
 [david-image]: https://img.shields.io/david/AriaFallah/pwrap.svg?style=flat-square
