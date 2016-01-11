@@ -7,7 +7,7 @@ function promiseWrap(fn) {
     throw new Error("argument passed to promise-wrap must be function!");
   }
 
-  // Returns a function that when called will return a promise.
+  // Returns a function that returns a promise
   return function() {
     // Not using Array.prototype.slice.call() as per:
     // https://github.com/petkaantonov/bluebird/wiki/Optimization-killers
@@ -16,8 +16,8 @@ function promiseWrap(fn) {
       args[i] = arguments[i];
     }
 
-    // Returns a promise that contains the function parameter body.
-    // Function is called with resolve and reject appended to its original arguments.
+    // Returns a promise that calls fn
+    // with resolve and reject appended to its original arguments.
     return new Promise(function(resolve, reject) {
        fn.apply(null, args.concat(resolve, reject));
     });
