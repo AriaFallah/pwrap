@@ -12,7 +12,9 @@
   "scripts": {
     "test": "mocha",
     "lint": "eslint index.js test",
-    "test:cover": "istanbul cover _mocha --report lcovonly"
+    "test:cover": "istanbul cover _mocha",
+    "test:cover-travis": "istanbul cover _mocha --report lcovonly -- -R spec && npm run coveralls",
+    "coveralls": "cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
   "devDependencies": {
     "chai": "^3.4.1",
     "chai-as-promised": "^5.2.0",
+    "coveralls": "^2.11.6",
     "eslint": "^1.10.3",
     "istanbul": "^0.4.1",
     "mocha": "^2.3.4"

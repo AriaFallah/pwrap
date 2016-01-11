@@ -3,4 +3,3 @@ node_js:
   - "4.0"
   - "0.12"
 script: "npm run test:cover"
-after_script: "npm install coveralls && cat ./coverage/lcov.info | coveralls"

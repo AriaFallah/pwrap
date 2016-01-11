@@ -1,3 +1,7 @@
 {
-  base: "eslint:recommended"
+  "base": "eslint:recommended",
+  "env": {
+    "browser": true,
+    "node": true
+  }
 }
