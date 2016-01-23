@@ -1,4 +1,4 @@
-var pwrap = require('../index');
+var pwrap = require('../index')();
 var expect = require('chai').use(require('chai-as-promised')).expect;
 
 describe('promise wrap', function() {

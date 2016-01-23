@@ -1,6 +1,6 @@
 {
   "name": "pwrap",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Add promise capability to any function",
   "keywords": [
     "promise",
@@ -35,7 +35,5 @@
     "mocha": "^2.3.4",
     "mocha-lcov-reporter": "^1.0.0"
   },
-  "dependencies": {
-    "bluebird": "^3.1.1"
-  }
+  "dependencies": {}
 }
