@@ -13,6 +13,27 @@ Add promise capability to any function.
 npm install --save pwrap
 ```
 
+## Why?
+Write
+
+```javascript
+var myFunc = pwrap(function(resolve, reject) {
+  // do stuff
+})
+```
+
+instead of writing
+
+```javascript
+var myFunc = function() {
+  return new Promise(function(resolve, reject) {
+    // do stuff
+  })
+}
+```
+
+and it only takes 800 bytes.
+
 ## Usage
 When you pwrap a function, you gain the ability to add `resolve` and `reject` as parameters, and the function will return a promise.
 
@@ -42,25 +63,6 @@ var timeoutPromise = pwrap(function(str, ms, resolve, reject) {
 timeoutPromise('One second has passed!', 1000).then(function(result) {
   console.log(result);
 });
-```
-
-## Why?
-Write
-
-```javascript
-var myFunc = pwrap(function(resolve, reject) {
-  // do stuff
-})
-```
-
-instead of writing
-
-```javascript
-var myFunc = function() {
-  return new Promise(function(resolve, reject) {
-    // do stuff
-  })
-}
 ```
 
 ## License
