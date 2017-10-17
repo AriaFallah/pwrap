@@ -4,7 +4,7 @@ function pwrap(promise) {
   return function(fn) {
     // Makes sure parameter is a function
     if (typeof fn !== "function") {
-      throw new Error("argument passed to promise-wrap must be function!");
+      throw new Error("Argument given to promise-wrap but be a function!");
     }
 
     // Returns a function that returns a promise
